@@ -4,39 +4,35 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# About Me
+const content = `# 플랫폼에 대한 고민
 
-![Samantha](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/clvlugru90000o4g8ahxp069s/db7abbe3-aa5c-433e-a16d-cbf137d1c9e5.png/public)
+반갑습니다. 본인의 기준을 충족시키는 플랫폼이 없어, 직접 개설하게 되었어요.
 
-Hey there! I'm Samantha, a 28-year-old former corporate warrior who decided to ditch the 9-to-5 grind and embark on an adventure of a lifetime. After years of hustling in a high-pressure job, I realized that life is too short to be stuck in an office, staring at spreadsheets all day.
+미디엄은 모바일 환경에서 영어가 아닌 언어의 줄간격, 자간(글자 간의 간격)이 훼손됩니다. 반응형 웹은 구현 가능하나, 제목-내용 간 글꼴 체계가 각각 고딕-셰리프로 상호 불일치합니다. 저의 경우 다양한 언어를 사용할 예정입니다.
 
-So I took a leap of faith, quit my cushy job in Singapore, and decided to see the world on my own terms. No more stuffy meetings or rigid schedules – just me, my backpack, and an open road ahead.
+대부분의 경우 한문을 표기하면 명조체로 표기되므로, infer 등의 서체가 필요했습니다. infer은 아랍어, 데바나가리,키릴, 그리스, 한자, 에스체트&움라우트, 세디유 모두 지원합니다.
 
-![Samantha](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/clvlugru90000o4g8ahxp069s/6b080e65-2329-4a36-ad5c-0a6af8d9aeb1.png/public)
+obisidian publishing은 월정액제입니다(반면 글로 얻는 수익은 $0입니다). 이러면 방안은 세 가지가 남게 됩니다: coda.io를 사용하거나, gitbook을 사용하거나, 직접 만들어야 하는 것이에요.  coda.io는 공개된 문서들만을 갈무리하여 관리하는 기능이 없었다. 반면 배포는 타 매체를 압도할 정도로 빠르고 간편합니다.
 
-This blog is where I'll be documenting my travels, sharing my experiences, and hopefully inspiring others to follow their wanderlust. From trekking through remote villages to savoring local cuisines, I'm on a mission to immerse myself in different cultures and create memories that will last a lifetime.
+쓰고자 하는 글의 대부분은 시리즈보다는 단간이므로, 태그를 활용하여 관리하는 게 효과적일 것입니다. gitbook은 시리즈 배포에 적합했습니다.
 
-But this journey isn't just about checking off destinations from a bucket list. It's about self-discovery, personal growth, and finding the courage to live life on my own terms. I'll be honest and raw, sharing the highs and lows, the moments of pure bliss and the inevitable challenges that come with solo travel.
+한편 정적 웹의 고질적인 문제일 수도 있습니다. 노션을 빼먹을 수가 없었어요. 노션은 특히, 여전히 끔찍하게 느립니다. 무엇보다 Notion.so는 애초에 UI를 TeX으로 고쳐야 하는 플랫폼입니다.
 
-So join me on this adventure, and let's explore the world together! Who knows, maybe my stories will inspire you to take that leap of faith and pursue your own dreams, whatever they may be.
+stacks, confluence 등도 고려해보았으나, 팀 혹은 쓰기 목적의 플랫폼이 아니었습니다. 무엇보다 절차를 간소화해야 필자 또한 시간을 글쓰기에 온전히 투자할 수 있겠습니다.
 
-Let's go on an adventure!
-
-Love,
-
-Samantha`;
+이러한 의사결정 끝에, 하나는 gatsby, 다른 하나는 Figma + Zeplin을 사용해보기로 하였어요. 관련 이슈 리포트는 만들다가 겪었던 고충을 간단히 올려드릴 예정이에요. 이 모든 단간은 테스트 메시지인데, 잘 뜨나 한 번 알아봐야겠습니다.';
 
 export async function generateMetadata() {
   return {
-    title: "About Me",
-    description: "Learn more about Samantha and her travel adventures",
+    title: "플랫폼에 대한 고민",
+    description: "테스트용으로",
     openGraph: {
-      title: "About Me",
-      description: "Learn more about Samantha and her travel adventures",
+      title: "플랫폼에 대한 고민",
+      description: "테스트용으로",
       images: [
         signOgImageUrl({
-          title: "Samantha",
-          label: "About Me",
+          title: "noimage404",
+          label: "플랫폼에 대한 고민",
           brand: config.blog.name,
         }),
       ],
