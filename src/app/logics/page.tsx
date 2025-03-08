@@ -1,22 +1,38 @@
-import { BlogPostsPreview } from "@/components/BlogPostPreview";
-import { BlogPostsPagination } from "@/components/BlogPostsPagination";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { wisp } from "@/lib/wisp";
+import { config } from "@/config";
+import { signOgImageUrl } from "@/lib/og-image";
+import Markdown from "react-markdown";
 
-const Page = async (
-  props: {
-    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-  }
-) => {
-  const searchParams = await props.searchParams;
-  const page = searchParams.page ? parseInt(searchParams.page as string) : 1;
-  const result = await wisp.getPosts({ limit: 6, page });
+const content = `# 테스트
+
+ㅇ왜안돼`;
+
+export async function generateMetadata() {
+  return {
+    title: "플랫폼에 대한 고민",
+    description: "테스트용으로",
+    openGraph: {
+      title: "플랫폼에 대한 고민",
+      description: "테스트용으로",
+      images: [
+        signOgImageUrl({
+          title: "noimage404",
+          label: "플랫폼에 대한 고민",
+          brand: config.blog.name,
+        }),
+      ],
+    },
+  };
+}
+
+const Page = async () => {
   return (
-    <div className="container mx-auto px-5 mb-10">
+    <div className="container mx-auto px-5">
       <Header />
-      <BlogPostsPreview posts={result.posts} />
-      <BlogPostsPagination pagination={result.pagination} />
+      <div className="prose lg:prose-lg dark:prose-invert m-auto mt-20 mb-10 blog-content">
+        <Markdown>{content}</Markdown>
+      </div>
       <Footer />
     </div>
   );
