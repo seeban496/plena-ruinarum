@@ -20,7 +20,7 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   { name: "창고", href: "/" },
   { name: "인사", href: "/about" }
-  { name: "논리학", href: "/" },
+  { name: "논리학", href: "/logics" },
 ];
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
