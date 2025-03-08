@@ -18,9 +18,9 @@ interface MenuItem {
   openInNewTab?: boolean;
 }
 const menuItems: MenuItem[] = [
-  { name: "창고", href: "/" },
-  { name: "인사", href: "/about" }
-  { name: "논리학", href: "/logics" },
+  { name: "Blogs", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Logics", href: "/logics" },
 ];
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
