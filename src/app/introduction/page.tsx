@@ -4,9 +4,9 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# Hi
+const content = `# 플랫폼에 대한 고민
 
-Adult / R1999 / Her, It
+Adult, R1999 주력, Her or It
 
 잡다한 기록: @nomen_occultum
 
@@ -14,9 +14,9 @@ nomen: 라틴어, '이름'
 
 occultum: occultus의 형용사, '미지의'
 
-줄이면 익명이에요.<br><br>안 바쁘면 립9를 합니다.., FUB FREE
+줄이면 익명이에요.<br><br>안 바쁘면 립9를 하며, FUB FREE
 
-무례하다는 게 사람마다 상이합니다. 편하게 차단해주세요, 감사하고 배려 못해드려 미안합니다.`;
+무례하다는 게 사람마다 기준이 다를 겁니다. 편하게 차단해주세요, 감사합니다.`;
 
 export async function generateMetadata() {
   return {
