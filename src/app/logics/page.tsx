@@ -4,9 +4,9 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# 테스트
+const content = 
 
-ㅇ왜안돼`;
+`;
 
 export async function generateMetadata() {
   return {
