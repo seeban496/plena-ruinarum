@@ -4,9 +4,9 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = 
+const content = #
 
-`;
+Fixing Now`;
 
 export async function generateMetadata() {
   return {
