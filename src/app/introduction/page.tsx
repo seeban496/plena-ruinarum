@@ -4,7 +4,7 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# Hi / 您好 / Здравствуйте / Χαίρετε
+const content = # Hi / 您好 / Здравствуйте / Χαίρετε
 
 Adult, R1999 주력, Her or It
 
