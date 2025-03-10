@@ -21,6 +21,7 @@ const menuItems: MenuItem[] = [
   { name: "Blogs", href: "/" },
   { name: "About", href: "/about" },
   { name: "Logics", href: "/logics" },
+  { name: "Introduction", href: "/introduction" }
 ];
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
