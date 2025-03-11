@@ -26,15 +26,14 @@ obisidian publishing은 유료이고, 적어도 법인 영수증에 청구받는
 
 export async function generateMetadata() {
   return {
-    title: "플랫폼에 대한 고민",
-    description: "테스트용으로",
+    title: "Tags",
+    description: "Different blog post categories",
     openGraph: {
-      title: "플랫폼에 대한 고민",
-      description: "테스트용으로",
+      title: "Tags",
+      description: "Different blog post categories",
       images: [
         signOgImageUrl({
-          title: "noimage404",
-          label: "플랫폼에 대한 고민",
+          title: "Blog Post Categories",
           brand: config.blog.name,
         }),
       ],
