@@ -18,10 +18,10 @@ Lv.50, seom, 706745116
 
 export async function generateMetadata() {
   return {
-    title: "Tags",
+    title: "saluteforXusers",
     description: "Different blog post categories",
     openGraph: {
-      title: "Tags",
+      title: "saluteforXusers",
       description: "Different blog post categories",
       images: [
         signOgImageUrl({
