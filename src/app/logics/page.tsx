@@ -10,10 +10,10 @@ const content =`### 웹 배포 방법
 
 export async function generateMetadata() {
   return {
-    title: "Tags",
+    title: "logics",
     description: "Different blog post categories",
     openGraph: {
-      title: "Tags",
+      title: "logics",
       description: "Different blog post categories",
       images: [
         signOgImageUrl({
