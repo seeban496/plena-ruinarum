@@ -6,7 +6,7 @@ import Markdown from "react-markdown";
 
 const content =`### 웹 배포 방법
 
-간단히 올려드렸습니다.`;
+testdata.`;
 
 export async function generateMetadata() {
   return {
