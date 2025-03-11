@@ -4,7 +4,7 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content =`# Hi / 您好 / Здравствуйте / Χαίρετε
+const content =`# Hi / 您好 / Здравствуйте
 
 Adult, R1999 주력, Her or It
 
@@ -22,21 +22,21 @@ Adult, R1999 주력, Her or It
 
 export async function generateMetadata() {
   return {
-    title: "Self-Intro",
-    description: "Damn",
+    title: "introduction",
+    description: "self-intro",
     openGraph: {
-      title: "Self-Intro",
-      description: "I just majored Econ",
+      title: "introduction",
+      description: "self-intro",
       images: [
         signOgImageUrl({
-          title: "noimage404",
-          label: "shit",
+          title: "introduction",
           brand: config.blog.name,
         }),
       ],
     },
   };
 }
+
 
 const Page = async () => {
   return (
