@@ -22,15 +22,15 @@ Adult, R1999 주력, Her or It
 
 export async function generateMetadata() {
   return {
-    title: "플랫폼에 대한 고민",
-    description: "테스트용으로",
+    title: "Self-Intro",
+    description: "Damn",
     openGraph: {
-      title: "플랫폼에 대한 고민",
-      description: "테스트용으로",
+      title: "Self-Intro",
+      description: "I just majored Econ",
       images: [
         signOgImageUrl({
           title: "noimage404",
-          label: "플랫폼에 대한 고민",
+          label: "shit",
           brand: config.blog.name,
         }),
       ],
