@@ -10,15 +10,15 @@ const content =`### 웹 배포 방법
 
 export async function generateMetadata() {
   return {
-    title: "플랫폼에 대한 고민",
-    description: "테스트용으로",
+    title: "Mockup",
+    description: "테스트용",
     openGraph: {
-      title: "플랫폼에 대한 고민",
-      description: "테스트용으로",
+      title: "Mockup",
+      description: "테스트용",
       images: [
         signOgImageUrl({
           title: "noimage404",
-          label: "플랫폼에 대한 고민",
+          label: "Mockup",
           brand: config.blog.name,
         }),
       ],
