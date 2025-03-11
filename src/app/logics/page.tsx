@@ -4,9 +4,9 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content =`# 낼 자료 내고, 할 일 하고 나서
+const content =`# 웹 배포 방법
 
-그러고 천천히 업로드하겠습니다. LEET(법학적성시험), PSAT(공직적격성시험) 등은 논리학 학습이 필요하고, 수험적 차원 그리고 강학적 차원을 균형있게 다뤄볼까 합니다. 교재의 경우 어빙 코피(Irving Copi) 교수님께서 쓰신 논리학 저서, 각종 시험에 필요한 수험서를 적당히 종합한 것입니다.`;
+간단히 올려드렸습니다.`;
 
 export async function generateMetadata() {
   return {
