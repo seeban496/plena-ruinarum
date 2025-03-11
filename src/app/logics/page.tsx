@@ -10,21 +10,21 @@ const content =`### 웹 배포 방법
 
 export async function generateMetadata() {
   return {
-    title: "Mockup",
-    description: "테스트용",
+    title: "Tags",
+    description: "Different blog post categories",
     openGraph: {
-      title: "Mockup",
-      description: "테스트용",
+      title: "Tags",
+      description: "Different blog post categories",
       images: [
         signOgImageUrl({
-          title: "noimage404",
-          label: "Mockup",
+          title: "Blog Post Categories",
           brand: config.blog.name,
         }),
       ],
     },
   };
 }
+
 
 const Page = async () => {
   return (
