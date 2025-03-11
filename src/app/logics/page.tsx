@@ -4,7 +4,7 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content =`##### 웹 배포 방법
+const content =`### 웹 배포 방법
 
 간단히 올려드렸습니다.`;
 
