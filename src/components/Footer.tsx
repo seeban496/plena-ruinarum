@@ -33,7 +33,7 @@ export const Footer: FunctionComponent = () => {
         <Link
           href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
         >
-          Blog powered by wisp
+          Wow I wanna blow up Github
         </Link>
       </div>
     </section>
